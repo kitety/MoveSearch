@@ -49,7 +49,7 @@ const App = () => {
         document.documentElement.scrollTop || document.body.scrollTop;
       axios
         .get(
-          `https://kaifa.baidu.com/rest/v1/search?query=${selectText}&pageNum=1&pageSize=10`
+          `https://movesearch.vercel.app/api/baidu?query=${selectText}&pageNum=1&pageSize=10`
         )
         .then((res) => {
           let { data } = res.data.data.documents;
